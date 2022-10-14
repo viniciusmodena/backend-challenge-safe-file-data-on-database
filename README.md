@@ -9,7 +9,7 @@ Como instalar esse projeto:
 - Ative o a ambiante virtual, rode o comando `source venv/bin/activate`;
 - Instale as dependencias do projeto, rode o comando `pip install -r requirements.txt`;
 - Execute a migrations, rode o comando `python manage.py migrate`;
-- Execute a fixture transactionTypes.json para prencher a tabela de transaction_types, rode o comando ;`python manage.py loaddata transactionTypes.json`;
+- Execute a fixture transactionTypes.json para prencher a tabela de transaction_types, rode o comando `python manage.py loaddata transactionTypes.json`;
 - Finalmente rode o comando `python manage.py runserver`;
-- No seu navegador, abra o link indicado no terminal.;
+- No seu navegador, acesse http://127.0.0.1:8000/api/upload/.
 - Envie um arquivo txt com seu CNAB

@@ -34,7 +34,8 @@ def registerTransaction(store_owner, store_name, type, transaction_data):
     transaction_type = get_object_or_404(TransactionType, type=type)
     store, _ = Store.objects.get_or_create(name=store_name, owner=store_owner)
 
-    Transaction.objects.create(**transaction_data, store=store, type=transaction_type)
+    if not Transaction.objects.filter(**transaction_data, store=store, type=transaction_type).exists():
+        Transaction.objects.create(**transaction_data, store=store, type=transaction_type)
 
 
 

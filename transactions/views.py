@@ -13,13 +13,16 @@ from utils.handleFile import handle_uploaded_file
 def upload_file(request):
     if request.method == 'POST':
         # ipdb.set_trace()
-        uploaded_file = request.FILES['cnab-file']
+        try:
+            uploaded_file = request.FILES['cnab-file']
 
-        handle_uploaded_file(uploaded_file)
+            handle_uploaded_file(uploaded_file)
 
-        return render(request, "success.html", {})
+            return render(request, "success.html", {})
 
-    # form = FileForm()
+        except :
+            return render(request, "upload_fail.html", {"message": "Selecione um arquivo para enviar"})
+
     return render(request, 'upload.html', {})
 
 
