@@ -1,0 +1,16 @@
+<header>
+  <div class="nav-bar">
+    <a href="{% url 'upload-file' %}">
+      <div class="div-btn">Carregar Novo Arquivo</div></a
+    >
+    <form method="POST" action="{% url 'filter-stores' %}" class="search-form">
+      {% csrf_token %}
+      <input
+        type="search"
+        placeholder="Insira o nome da loja"
+        name="search-bar"
+      />
+      <button type="submit">&nbsp</button>
+    </form>
+  </div>
+</header>

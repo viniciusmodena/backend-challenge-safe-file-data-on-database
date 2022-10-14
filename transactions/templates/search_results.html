@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  {% if stores %} {% for store in stores %}
+  <div class="store-card">
+    <a href="{% url 'list-transactions' store.name %}">
+      <div class="store-card-top">
+        <p>{{store.name}}</p>
+      </div>
+      <div class="store-card-bottom">
+        <p>Proprietario: {{store.owner}}</p>
+      </div>
+    </a>
+    <div class="divider"></div>
+  </div>
+  {% endfor %} {% else %}
+  <div>
+    <span>Nenhum resultado encontrado</span>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

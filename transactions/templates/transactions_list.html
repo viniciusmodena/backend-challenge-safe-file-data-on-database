@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <div class="store-card">
+    <div class="store-card-top">
+      <p>Loja: {{store.name}}</p>
+    </div>
+    <div class="store-card-bottom">
+      <p>Proprietario: {{store.owner}}</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="list-container">
+    <div class="table-wraper">
+      <table class="table">
+        <thead>
+          <tr class="table-header">
+            <th>Natureza</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Valor</th>
+            <th>Cartão</th>
+            <th>CPF</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          {% for transaction in transactions %}
+          <tr class="{{transaction.type.nature}}">
+            <td>{{transaction.type.nature}}</td>
+            <td>{{transaction.date}}</td>
+            <td>{{transaction.time}}</td>
+            <td>{{transaction.value}}</td>
+            <td>{{transaction.card_number}}</td>
+            <td>{{transaction.cpf}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="divider"></div>
+    <div class="balance-container">
+      <span> Saldo em Conta: {{balance}}</span>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

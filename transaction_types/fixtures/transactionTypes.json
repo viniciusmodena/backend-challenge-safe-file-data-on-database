@@ -1,0 +1,83 @@
+[
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "2b803108-8d4c-4250-b97b-d808f708dd74",
+  "fields": {
+    "type": 8,
+    "description": "Recebimento DOC",
+    "nature": "Entrada"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "441428e1-ad6e-4460-b85a-e5ced2ad5482",
+  "fields": {
+    "type": 1,
+    "description": "Debito",
+    "nature": "Entrada"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "6af814a7-25d9-4ced-b54d-baecbca34a18",
+  "fields": {
+    "type": 7,
+    "description": "Recebimento TED",
+    "nature": "Entrada"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "7f1c8da1-71e6-423d-95a6-af893b31da23",
+  "fields": {
+    "type": 5,
+    "description": "Recebimento Emprestimo",
+    "nature": "Entrada"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "8820397e-fbc7-4ee4-a6c2-373a24a4280a",
+  "fields": {
+    "type": 4,
+    "description": "Credito",
+    "nature": "Entrada"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "c1d99dc1-943e-4cf6-a65b-34a0b457f329",
+  "fields": {
+    "type": 9,
+    "description": "Aluguel",
+    "nature": "Saida"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "c4655719-0270-4f3c-8053-72a04d8a6987",
+  "fields": {
+    "type": 2,
+    "description": "Boleto",
+    "nature": "Saida"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "c8974808-dbc7-4aa3-912d-37b70444575d",
+  "fields": {
+    "type": 3,
+    "description": "Financiamento",
+    "nature": "Saida"
+  }
+},
+{
+  "model": "transaction_types.transactiontype",
+  "pk": "eb585046-7ad1-4a8c-bea6-9f8e89df0368",
+  "fields": {
+    "type": 6,
+    "description": "Vendas",
+    "nature": "Entrada"
+  }
+}
+]
